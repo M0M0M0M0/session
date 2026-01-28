@@ -1,7 +1,7 @@
 package main.asm1_26;
 
 public class FoodProduct extends Product {
-    private int expiryDay;
+    private Integer expiryDay;
 
     public FoodProduct(String productId, String name, double price, int expiryDay) {
         super(productId, price, name);

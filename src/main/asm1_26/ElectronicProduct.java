@@ -1,7 +1,7 @@
 package main.asm1_26;
 
 public class ElectronicProduct extends Product {
-    private int warrantyMonths;
+    private Integer warrantyMonths;
 
     public ElectronicProduct() {
 
