@@ -30,5 +30,8 @@ public class Main {
         System.out.println("Gia da giam: " + p6.calculateDiscountedPrice());
         p12.getInfo();
         System.out.println("Gia da giam: " + p12.calculateDiscountedPrice());
+        for (Product p : products) {
+            System.out.println(p.getInfo());
+        }
     }
 }
