@@ -19,10 +19,12 @@ public class FoodProduct extends Product {
         this.expiryDay = expiryDay;
     }
 
+    @Override
     public void getInfo() {
         System.out.println(getProductId() + "/" + getName() + "/" + getPrice() + "/" + getExpiryDay());
     }
 
+    @Override
     public double calculateDiscountedPrice() {
         if (getExpiryDay() <= 3) return getPrice() * 0.7;
         else if (getExpiryDay() <= 7) {

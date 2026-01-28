@@ -20,10 +20,12 @@ public class ElectronicProduct extends Product {
         this.warrantyMonths = warrantyMonths;
     }
 
+    @Override
     public void getInfo() {
         System.out.println(getProductId() + "/" + getName() + "/" + getPrice() + "/" + getWarrantyMonths());
     }
 
+    @Override
     public double calculateDiscountedPrice() {
         if (getPrice() > 10000000) return getPrice() * 0.9;
         return getPrice();

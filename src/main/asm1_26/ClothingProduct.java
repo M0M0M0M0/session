@@ -19,10 +19,12 @@ public class ClothingProduct extends Product {
         this.size = size;
     }
 
+    @Override
     public void getInfo() {
         System.out.println(getProductId() + "/" + getName() + "/" + getPrice() + "/" + getSize());
     }
 
+    @Override
     public double calculateDiscountedPrice() {
         return getPrice() * 0.85;
     }
