@@ -20,8 +20,8 @@ public class ClothingProduct extends Product {
     }
 
     @Override
-    public void getInfo() {
-        System.out.println(getProductId() + "/" + getName() + "/" + getPrice() + "/" + getSize());
+    public String getInfo() {
+        return getInfo() + "/" + getSize();
     }
 
     @Override

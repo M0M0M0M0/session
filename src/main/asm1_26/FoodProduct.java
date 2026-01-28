@@ -20,8 +20,8 @@ public class FoodProduct extends Product {
     }
 
     @Override
-    public void getInfo() {
-        System.out.println(getProductId() + "/" + getName() + "/" + getPrice() + "/" + getExpiryDay());
+    public String getInfo() {
+        return super.getInfo() + "/" + getExpiryDay();
     }
 
     @Override

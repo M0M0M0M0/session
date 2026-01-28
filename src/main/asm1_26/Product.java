@@ -38,8 +38,8 @@ public class Product {
         this.price = price;
     }
 
-    public void getInfo() {
-        System.out.println(getProductId() + "/" + getName() + "/" + getPrice());
+    public String getInfo() {
+        return getProductId() + "/" + getName() + "/" + getPrice();
     }
 
     public double calculateDiscountedPrice() {

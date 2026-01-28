@@ -21,8 +21,8 @@ public class ElectronicProduct extends Product {
     }
 
     @Override
-    public void getInfo() {
-        System.out.println(getProductId() + "/" + getName() + "/" + getPrice() + "/" + getWarrantyMonths());
+    public String getInfo() {
+        return super.getInfo() + "/" + getWarrantyMonths();
     }
 
     @Override
