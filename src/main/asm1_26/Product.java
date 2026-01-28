@@ -39,7 +39,7 @@ public class Product {
     }
 
     public void getInfo() {
-        System.out.println(productId + "/" + name + "/" + price);
+        System.out.println(getProductId() + "/" + getName() + "/" + getPrice());
     }
 
     public double calculateDiscountedPrice() {
