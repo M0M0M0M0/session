@@ -59,7 +59,17 @@ public class PhoneBook extends Phone {
 
     @Override
     public void sort() {
-        phoneList.sort(Comparator.comparing(PhoneNumber::getName));
+//        phoneList.sort(Comparator.comparing(PhoneNumber::getName));
+        for (int i = 0; i < phoneList.size(); i++) {
+            for (int j = 0; j < phoneList.size() - i - 1; j++) {
+                if (phoneList.get(j).getName().compareTo(phoneList.get(j + 1).getName()) > 0) {
+                    PhoneNumber p = new PhoneNumber();
+                    phoneList.set(j, phoneList.get(j + 1));
+                    phoneList.set(j + 1, p);
+                }
+            }
+        }
     }
+
 
 }
