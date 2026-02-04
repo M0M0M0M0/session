@@ -25,6 +25,11 @@ public class PhoneBook extends Phone {
     @Override
     public void removePhone(String name) {
         phoneList.removeIf(value -> value.getName().equals(name));
+//        for (PhoneNumber value : phoneList) {
+//            if (value.getName().equals(name)) {
+//                phoneList.remove(value);
+//            }
+//        }
     }
 
     @Override
