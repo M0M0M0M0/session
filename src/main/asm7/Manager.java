@@ -25,8 +25,8 @@ public class Manager extends Employee implements BonusEligible {
     }
 
     @Override
-    public double baseSalary() {
-        return getBaseSalary() + getTeamSize() * 1000000;
+    public double caculateSalary() {
+        return getBaseSalary() + getTeamSize() * 1000;
     }
 
     @Override

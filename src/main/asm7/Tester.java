@@ -20,8 +20,8 @@ public class Tester extends Employee {
     }
 
     @Override
-    public double baseSalary() {
-        return getBaseSalary() + getBugsFound() * 30000;
+    public double caculateSalary() {
+        return getBaseSalary() + getBugsFound() * 30;
     }
 
     @Override

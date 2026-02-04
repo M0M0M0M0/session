@@ -25,12 +25,17 @@ public class Developer extends Employee implements BonusEligible {
     }
 
     @Override
-    public double baseSalary() {
-        return getBaseSalary() + getOvertimeHours() * 50000;
+    public double caculateSalary() {
+        return getBaseSalary() + getOvertimeHours() * 50;
     }
 
     @Override
     public String getPosition() {
         return "Developer";
+    }
+
+    @Override
+    public void showInfo() {
+
     }
 }

@@ -38,7 +38,7 @@ public abstract class Employee {
         this.baseSalary = baseSalary;
     }
 
-    public abstract double baseSalary();
+    public abstract double caculateSalary();
 
     public abstract String getPosition();
 
