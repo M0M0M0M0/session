@@ -7,9 +7,30 @@ public class Main {
 //        Person p = new Person();  vi du de chung minh khong the tao doi tuong tu abstract class
         Asian a = new Asian();
         Euro e = new Euro();
-        ArrayList<Person> p = new ArrayList<>();
-        p.add(a);
-        p.add(e);
+        ArrayList<Person> ps = new ArrayList<>();
+        ps.add(a);
+        ps.add(e);
+        Person p = new Person() {  // anonymous class
+            @Override
+            public void eat() {
 
+            }
+
+            @Override
+            public void sleep() {
+
+            }
+        };
+        LoveTipSpecial ls = new LoveTipSpecial() {
+            @Override
+            public void xyz(String s, int y) {
+
+            }
+        };
+        LoveTipSpecial lss = (s, y) -> {
+
+        };
+        ArrayList<Integer> arrs = new ArrayList<>();
+        arrs.stream().filter(i -> i > 0).map(i -> i < 10).toArray();
     }
 }
